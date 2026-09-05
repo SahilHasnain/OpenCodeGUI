@@ -124,7 +124,7 @@
     "compile:extension": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "watch:all": "node scripts/watch-all.js",
-    "build:webview": "node scripts/build-rendering.js",
+    "build:webview": "node init && node scripts/build-rendering.js",
     "watch:webview": "node scripts/build-rendering.js --watch",
     "check:webview": "npm run build:webview && node scripts/check-rendering-bundle.js && node scripts/check-feature-bundle.js && node scripts/check-word-completion-bundle.js && node scripts/check-undo-bundle.js && node scripts/check-continuation-bundle.js",
     "check:webview:determinism": "node scripts/check-rendering-determinism.js",
